@@ -24,3 +24,46 @@
 .cert-icon:hover {
   animation: sparkle 1s infinite;
 }
+
+@keyframes violentBounce {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  10% {
+    transform: translate(200px, -150px) rotate(45deg);
+  }
+  20% {
+    transform: translate(-180px, 140px) rotate(-40deg);
+  }
+  30% {
+    transform: translate(220px, 160px) rotate(60deg);
+  }
+  40% {
+    transform: translate(-200px, -170px) rotate(-55deg);
+  }
+  50% {
+    transform: translate(180px, -130px) rotate(45deg);
+  }
+  60% {
+    transform: translate(-210px, 180px) rotate(-60deg);
+  }
+  70% {
+    transform: translate(190px, -160px) rotate(55deg);
+  }
+  80% {
+    transform: translate(-220px, 170px) rotate(-45deg);
+  }
+  90% {
+    transform: translate(200px, 150px) rotate(60deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.bounce {
+  animation: violentBounce 2s linear forwards;
+  cursor: grabbing;
+  pointer-events: none;
+  z-index: 9999;
+}
